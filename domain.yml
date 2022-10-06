@@ -1,0 +1,59 @@
+version: '3.1'
+intents:
+- choose_makanan
+- choose_menu
+- choose_minuman
+- goodbye
+- greet
+- makan_1
+- minum_1
+responses:
+  utter_greet:
+  - text: ✨Selamat datang di 3C Cafe!✨?
+  utter_welcome:
+  - text: Menu apa yang ingin anda pesan?
+    buttons:
+    - title: Makanan
+      payload: /choose_makanan
+    - title: Minuman
+      payload: /choose_minuman
+  utter_makanan:
+  - text: Disini kami menyediakan nasi goreng, mie goreng, kwetiauw goreng
+    buttons:
+    - title: Kembali ke Menu
+      payload: /choose_menu
+  utter_minuman:
+  - text: Disini kami menyediakan teh manis, teh tawar
+    buttons:
+    - title: Kembali ke Menu
+      payload: /choose_menu
+  utter_goodbye:
+  - text: Bye
+entities:
+- makan
+- minum
+slots:
+  makan:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: makan
+      type: from_entity
+  minum:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: minum
+      type: from_entity
+actions:
+- action_makanan
+- action_minuman
+- utter_greet
+- utter_makanan
+- utter_minuman
+- utter_welcome
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

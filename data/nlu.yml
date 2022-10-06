@@ -1,0 +1,53 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - selamat pagi
+    - selamat siang
+    - selamat sore
+    - selamat malam
+    - halo
+    - hai
+    - hi
+- intent: goodbye
+  examples: |
+    - dadah
+    - good bye
+    - cu
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: choose_makanan
+  examples: |
+    - makan
+    - makanan
+    - lapar
+- intent: makan_1
+  examples: |
+    - ingin makan [nasi goreng](makan)
+    - ingin makan [mie goreng](makan)
+    - ingin makan [kwetiauw goreng](makan)
+    - pesan [nasi goreng](makan)
+    - pesan [mie goreng](makan)
+    - pesan [kwetiauw goreng](makan)
+- intent: choose_minuman
+  examples: |
+    - minum
+    - minuman
+    - haus
+- intent: minum_1
+  examples: |
+    - ingin minum [teh manis](minum)
+    - ingin minum [teh tawar](minum)
+    - pesan [teh manis](minum)
+    - pesan [teh tawar](minum)
+- intent: choose_menu
+  examples: |
+    - Kembali ke Menu
+    - Menu

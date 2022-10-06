@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-makan",
+      "2": "I-makan",
+      "3": "L-makan",
+      "4": "U-makan",
+      "5": "B-minum",
+      "6": "I-minum",
+      "7": "L-minum",
+      "8": "U-minum",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-makan": 1,
+      "I-makan": 2,
+      "L-makan": 3,
+      "U-makan": 4,
+      "B-minum": 5,
+      "I-minum": 6,
+      "L-minum": 7,
+      "U-minum": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
