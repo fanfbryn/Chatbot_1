@@ -3,12 +3,17 @@ intents:
   - choose_makanan
   - choose_menu
   - choose_minuman
-  - choose_seblak
-  - choose_cuanki
-  - choose_batagor
-  - choose_tehmanis
-  - choose_lemontea
-  - choose_air
+  - choose_sarirotikeju
+  - choose_indomie
+  - choose_oreo
+  - choose_sarden
+  - choose_sariroticoklat
+  - choose_kornet
+  - choose_lafonte
+  - choose_qtel
+  - choose_tehbotol
+  - choose_ichitan
+  - choose_cimory
   - goodbye
   - greet
   - makan_1
@@ -26,47 +31,57 @@ responses:
   utter_makanan:
     - text: Disini kami menyediakan
       buttons:
-        - title: Seblak
-          payload: /choose_seblak
-        - title: Batagor
-          payload: /choose_batagor
-        - title: Cuanki
-          payload: /choose_cuanki
+        - title: Sari Roti Sobek Rasa Cokelat Keju Murah Meriah Ayo dibeli
+          payload: /choose_sarirotikeju
+        - title: Oreo Original
+          payload: /choose_oreo
+        - title: Indomie Goreng
+          payload: /choose_indomie
+        - title: Sarden Botan Besar - Mackerel 425 gr
+          payload: /choose_sarden
+        - title: Sari Roti Sobek Rasa Cokelat
+          payload: /choose_sariroticoklat
+        - title: Kornet Pronas Corned Beef 198 gram
+          payload: /choose_kornet
+        - title: Lafonte Spaghetti 225 gr
+          payload: /choose_lafonte
+        - title: Qtel
+          payload: /choose_qtel
         - title: Kembali ke Menu
           payload: /choose_menu
   utter_seblak:
-    - text: ✨Seblak✨ Seblak merupakan jajanan khas Bandung yang memiliki cita rasa gurih pedas. Terbuat dari aneka kerupuk warna-warni yang direbus bersama bumbu hingga lembek, sosis, bakso, makaroni, mie, kwetiau, dan topping lainnya. Diolah dengan campuran bumbu gurih pedas yang aroma kencurnya sangat kuat. Untuk kamu yang suka pedas-pedas, jangan lupa cobain seblak ya!
-      image: https://selerasa.com/wp-content/uploads/2018/11/seblak-bandung-kumplit.jpg
+    - text: ✨Sari Roti Sobek Cokelat Keju✨ Deskripsi Singkat
+      image: https://www.aurodigo.com/wp-content/uploads/2022/10/Sari_Roti-Sobek_Cokelat_Keju-Chocolate_Cheese.jpg
   utter_seblak_btn:
-    - text: Klik button dibawah untuk melihat rekomendasi streetfood lainnya!
+    - text: Klik button dibawah untuk melihat produk lainnya!
       buttons:
         - title: Menu Makanan Lainnya
           payload: /choose_makanan
   utter_batagor:
-    - text: ✨Batagor✨ Batagor adalah jajanan khas Sunda yang cocok untuk mengganjal perut di sore hari. Nama batagor merupakan singkatan  'Bakso Tahu Goreng' yang merujuk pada bahan dan cara membuat batagor. Banyak orang menyukai gurih renyahnya adonan bakso dan tahu goreng. Batagor makin enak saat ditambahkan dengan saus kacang. Jangan lupa untuk mencicipi batagor ya!
-      image: https://selerasa.com/wp-content/uploads/2021/11/Resep-Batagor-Bandung-500x500.jpg
+    - text: ✨Oreo Original✨ Deskripsi Singkat
+      image: https://media.suara.com/pictures/653x366/2020/03/19/70014-biskuit-oreo-unsplashdonald-giannatti.jpg
   utter_batagor_btn:
-    - text: Klik button dibawah untuk melihat rekomendasi streetfood lainnya!
+    - text: Klik button dibawah untuk melihat produk lainnya!
       buttons:
         - title: Menu Makanan Lainnya
           payload: /choose_makanan
   utter_cuanki:
-    - text: ✨Cuanki✨ Cuanki adalah jajanan khas Kota Bandung semacam siomay atau bakso tahu kering, yang kemudian diberi kuah. Sepintas cuanki memang tak berbeda dengan bakso pada umumnya. Bedanya, cuanki tidak disertai topping berupa mie atau sayuran. Cuanki biasa dijual oleh pedagang keliling menggunakan pikulan. Sebutan cuanki sendiri konon merupakan singkatan dari kata Cari Uang Jalan Kaki.
-      image: https://img.okezone.com/content/2015/08/02/298/1189258/cuanki-jajanan-bandung-yang-bikin-nagih-MfeAS60UK7.jpg
+    - text: ✨Indomie Goreng✨ Deskripsi Singkat
+      image: https://asset.kompas.com/crops/PsiyOF2677ryklr4Z1QugJcOgiU=/33x0:988x637/750x500/data/photo/2021/11/16/61935d1d8db87.jpg
   utter_cuanki_btn:
-    - text: Klik button dibawah untuk melihat rekomendasi streetfood lainnya!
+    - text: Klik button dibawah untuk melihat produk lainnya!
       buttons:
         - title: Menu Makanan Lainnya
           payload: /choose_makanan
   utter_minuman:
     - text: Disini kami menyediakan
       buttons:
-        - title: Teh manis
-          payload: /choose_tehmanis
-        - title: Lemon Tea
-          payload: /choose_lemontea
-        - title: Air Mineral
-          payload: /choose_air
+        - title: Teh Botol
+          payload: /choose_tehbotol
+        - title: Ichitan Thai Tea
+          payload: /choose_ichitan
+        - title: Cimory UHT Hazelnut 250ml
+          payload: /choose_cimory
         - title: Kembali ke Menu
           payload: /choose_menu
   utter_goodbye:

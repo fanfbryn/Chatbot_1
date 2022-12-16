@@ -36,20 +36,20 @@ rules:
       - intent: minum_1
       - action: action_minuman
 
-  - rule: to seblak
+  - rule: to sarirotikeju
     steps:
-      - intent: choose_seblak
+      - intent: choose_sarirotikeju
       - action: utter_seblak
       - action: utter_seblak_btn
 
-  - rule: to batagor
+  - rule: to oreo
     steps:
-      - intent: choose_batagor
+      - intent: choose_oreo
       - action: utter_batagor
       - action: utter_batagor_btn
 
-  - rule: to cuanki
+  - rule: to indomie
     steps:
-      - intent: choose_cuanki
+      - intent: choose_indomie
       - action: utter_cuanki
       - action: utter_cuanki_btn

@@ -1,0 +1,41 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_minuman\"}}]": "utter_minuman",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_minuman\"}}, {\"prev_action\": {\"action_name\": \"utter_minuman\"}, \"user\": {\"intent\": \"choose_minuman\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"minum_1\"}}]": "action_minuman",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"minum_1\"}}, {\"prev_action\": {\"action_name\": \"action_minuman\"}, \"user\": {\"intent\": \"minum_1\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_seblak\"}}]": "utter_seblak",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_seblak\"}}, {\"prev_action\": {\"action_name\": \"utter_seblak\"}, \"user\": {\"intent\": \"choose_seblak\"}}]": "utter_seblak_btn",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_seblak\"}}, {\"prev_action\": {\"action_name\": \"utter_seblak\"}, \"user\": {\"intent\": \"choose_seblak\"}}, {\"prev_action\": {\"action_name\": \"utter_seblak_btn\"}, \"user\": {\"intent\": \"choose_seblak\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_makanan\"}}]": "utter_makanan",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_makanan\"}}, {\"prev_action\": {\"action_name\": \"utter_makanan\"}, \"user\": {\"intent\": \"choose_makanan\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"makan_1\"}}]": "action_makanan",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"makan_1\"}}, {\"prev_action\": {\"action_name\": \"action_makanan\"}, \"user\": {\"intent\": \"makan_1\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_menu\"}}]": "utter_welcome",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_menu\"}}, {\"prev_action\": {\"action_name\": \"utter_welcome\"}, \"user\": {\"intent\": \"choose_menu\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_cuanki\"}}]": "utter_cuanki",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_cuanki\"}}, {\"prev_action\": {\"action_name\": \"utter_cuanki\"}, \"user\": {\"intent\": \"choose_cuanki\"}}]": "utter_cuanki_btn",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_cuanki\"}}, {\"prev_action\": {\"action_name\": \"utter_cuanki\"}, \"user\": {\"intent\": \"choose_cuanki\"}}, {\"prev_action\": {\"action_name\": \"utter_cuanki_btn\"}, \"user\": {\"intent\": \"choose_cuanki\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_batagor\"}}]": "utter_batagor",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_batagor\"}}, {\"prev_action\": {\"action_name\": \"utter_batagor\"}, \"user\": {\"intent\": \"choose_batagor\"}}]": "utter_batagor_btn",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_batagor\"}}, {\"prev_action\": {\"action_name\": \"utter_batagor\"}, \"user\": {\"intent\": \"choose_batagor\"}}, {\"prev_action\": {\"action_name\": \"utter_batagor_btn\"}, \"user\": {\"intent\": \"choose_batagor\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_batagor\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_menu\"}}, {\"prev_action\": {\"action_name\": \"utter_welcome\"}, \"user\": {\"intent\": \"choose_menu\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_batagor\"}}, {\"prev_action\": {\"action_name\": \"utter_batagor\"}, \"user\": {\"intent\": \"choose_batagor\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_cuanki\"}}, {\"prev_action\": {\"action_name\": \"utter_cuanki\"}, \"user\": {\"intent\": \"choose_cuanki\"}}, {\"prev_action\": {\"action_name\": \"utter_cuanki_btn\"}, \"user\": {\"intent\": \"choose_cuanki\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_menu\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_cuanki\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_cuanki\"}}, {\"prev_action\": {\"action_name\": \"utter_cuanki\"}, \"user\": {\"intent\": \"choose_cuanki\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_batagor\"}}, {\"prev_action\": {\"action_name\": \"utter_batagor\"}, \"user\": {\"intent\": \"choose_batagor\"}}, {\"prev_action\": {\"action_name\": \"utter_batagor_btn\"}, \"user\": {\"intent\": \"choose_batagor\"}}]"
+    ]
+  }
+}
