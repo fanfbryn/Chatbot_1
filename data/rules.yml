@@ -1,38 +1,55 @@
 version: "3.1"
 
 rules:
+  #- rule: Say goodbye anytime the user says goodbye
+  #  steps:
+  #  - intent: goodbye
+  #  - action: utter_goodbye
 
-#- rule: Say goodbye anytime the user says goodbye
-#  steps:
-#  - intent: goodbye
-#  - action: utter_goodbye
+  #- rule: Say 'I am a bot' anytime the user challenges
+  #  steps:
+  #  - intent: bot_challenge
+  #  - action: utter_iamabot
 
-#- rule: Say 'I am a bot' anytime the user challenges
-#  steps:
-#  - intent: bot_challenge
-#  - action: utter_iamabot
+  - rule: back to menu
+    steps:
+      - intent: choose_menu
+      - action: utter_welcome
 
-- rule: back to menu
-  steps:
-  - intent: choose_menu
-  - action: utter_welcome
+  - rule: to makan
+    steps:
+      - intent: choose_makanan
+      - action: utter_makanan
 
-- rule: to makan
-  steps:
-  - intent: choose_makanan
-  - action: utter_makanan
+  - rule: to minum
+    steps:
+      - intent: choose_minuman
+      - action: utter_minuman
 
-- rule: to minum
-  steps:
-  - intent: choose_minuman
-  - action: utter_minuman
+  - rule: untuk makan
+    steps:
+      - intent: makan_1
+      - action: action_makanan
 
-- rule: untuk makan
-  steps:
-  - intent: makan_1
-  - action: action_makanan
+  - rule: untuk minum
+    steps:
+      - intent: minum_1
+      - action: action_minuman
 
-- rule: untuk minum
-  steps:
-  - intent: minum_1
-  - action: action_minuman
+  - rule: to seblak
+    steps:
+      - intent: choose_seblak
+      - action: utter_seblak
+      - action: utter_seblak_btn
+
+  - rule: to batagor
+    steps:
+      - intent: choose_batagor
+      - action: utter_batagor
+      - action: utter_batagor_btn
+
+  - rule: to cuanki
+    steps:
+      - intent: choose_cuanki
+      - action: utter_cuanki
+      - action: utter_cuanki_btn

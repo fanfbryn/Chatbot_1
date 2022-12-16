@@ -1,0 +1,26 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_minuman\"}}]": "utter_minuman",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_minuman\"}}, {\"prev_action\": {\"action_name\": \"utter_minuman\"}, \"user\": {\"intent\": \"choose_minuman\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"minum_1\"}}]": "action_minuman",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"minum_1\"}}, {\"prev_action\": {\"action_name\": \"action_minuman\"}, \"user\": {\"intent\": \"minum_1\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_makanan\"}}]": "utter_makanan",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_makanan\"}}, {\"prev_action\": {\"action_name\": \"utter_makanan\"}, \"user\": {\"intent\": \"choose_makanan\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_menu\"}}]": "utter_welcome",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_menu\"}}, {\"prev_action\": {\"action_name\": \"utter_welcome\"}, \"user\": {\"intent\": \"choose_menu\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"makan_1\"}}]": "action_makanan",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"makan_1\"}}, {\"prev_action\": {\"action_name\": \"action_makanan\"}, \"user\": {\"intent\": \"makan_1\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_menu\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_menu\"}}, {\"prev_action\": {\"action_name\": \"utter_welcome\"}, \"user\": {\"intent\": \"choose_menu\"}}]"
+    ]
+  }
+}

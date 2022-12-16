@@ -1,53 +1,73 @@
 version: "3.1"
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - selamat pagi
-    - selamat siang
-    - selamat sore
-    - selamat malam
-    - halo
-    - hai
-    - hi
-- intent: goodbye
-  examples: |
-    - dadah
-    - good bye
-    - cu
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-- intent: choose_makanan
-  examples: |
-    - makan
-    - makanan
-    - lapar
-- intent: makan_1
-  examples: |
-    - ingin makan [nasi goreng](makan)
-    - ingin makan [mie goreng](makan)
-    - ingin makan [kwetiauw goreng](makan)
-    - pesan [nasi goreng](makan)
-    - pesan [mie goreng](makan)
-    - pesan [kwetiauw goreng](makan)
-- intent: choose_minuman
-  examples: |
-    - minum
-    - minuman
-    - haus
-- intent: minum_1
-  examples: |
-    - ingin minum [teh manis](minum)
-    - ingin minum [teh tawar](minum)
-    - pesan [teh manis](minum)
-    - pesan [teh tawar](minum)
-- intent: choose_menu
-  examples: |
-    - Kembali ke Menu
-    - Menu
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - selamat pagi
+      - selamat siang
+      - selamat sore
+      - selamat malam
+      - halo
+      - hai
+      - hi
+  - intent: goodbye
+    examples: |
+      - dadah
+      - good bye
+      - cu
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+  - intent: choose_makanan
+    examples: |
+      - makan
+      - makanan
+      - lapar
+  - intent: makan_1
+    examples: |
+      - ingin makan [nasi goreng](makan)
+      - ingin makan [mie goreng](makan)
+      - ingin makan [kwetiauw goreng](makan)
+      - pesan [nasi goreng](makan)
+      - pesan [mie goreng](makan)
+      - pesan [kwetiauw goreng](makan)
+      - ingin makan [seblak](makan)
+      - pesan [seblak](makan)
+      - ingin makan [batagor](makan)
+      - pesan [batagor](makan)
+      - ingin makan [cuanki](makan)
+      - pesan [cuanki](makan)
+  - intent: choose_minuman
+    examples: |
+      - minum
+      - minuman
+      - haus
+  - intent: minum_1
+    examples: |
+      - ingin minum [teh manis](minum)
+      - ingin minum [teh tawar](minum)
+      - pesan [teh manis](minum)
+      - pesan [teh tawar](minum)
+  - intent: choose_sarirotikeju
+    examples: |
+      - Sari roti keju cokelat
+      - Sari roti cokelat keju
+      - sari roti keju
+  - intent: choose_oreo
+    examples: |
+      - Oreo
+      - oreo
+  - intent: choose_indomie
+    examples: |
+      - Indomie
+      - indomie goreng
+      - indomie
+  - intent: choose_menu
+    examples: |
+      - Kembali ke Menu
+      - Menu

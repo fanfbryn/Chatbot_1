@@ -1,31 +1,43 @@
 version: "3.1"
 
 stories:
+  - story: interactive
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_welcome
+      - intent: choose_makanan
+      - action: utter_makanan
+      - intent: makan_1
+        entities:
+          - makan: nasi goreng
+      - slot_was_set:
+          - makan: nasi goreng
+      - action: action_makanan
 
-- story: interactive
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_welcome
-  - intent: choose_makanan
-  - action: utter_makanan
-  - intent: makan_1
-    entities:
-    - makan: nasi goreng
-  - slot_was_set:
-    - makan: nasi goreng
-  - action: action_makanan
+  - story: interactive2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_welcome
+      - intent: choose_minuman
+      - action: utter_minuman
+      - intent: minum_1
+        entities:
+          - minum: teh manis
+      - slot_was_set:
+          - minum: teh manis
+      - action: action_minuman
 
-- story: interactive2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_welcome
-  - intent: choose_minuman
-  - action: utter_minuman
-  - intent: minum_1
-    entities:
-    - minum: teh manis
-  - slot_was_set:
-    - minum: teh manis
-  - action: action_minuman
+  - story: interactive_story_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_welcome
+      - intent: choose_makanan
+      - action: utter_makanan
+      - intent: choose_sarirotikeju
+      - action: utter_seblak
+      - action: utter_seblak_btn
+      - intent: choose_makanan
+      - action: utter_makanan
